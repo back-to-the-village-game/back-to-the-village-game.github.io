@@ -113,6 +113,61 @@
             text-decoration: underline;
         }
 
+        .download-banner {
+            background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+            color: white;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin: 40px 0;
+            box-shadow: 0 10px 25px rgba(107, 171, 94, 0.3);
+            border: 2px solid var(--accent-yellow);
+        }
+
+        .download-content {
+            flex: 1;
+        }
+
+        .download-content h2 {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--accent-yellow);
+            font-size: 1.8rem;
+        }
+
+        .download-content p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        .play-store-button {
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .play-store-button:hover {
+            transform: scale(1.08);
+        }
+
+        .play-badge {
+            height: 64px;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .download-banner {
+                flex-direction: column;
+                text-align: center;
+                padding: 25px;
+            }
+            
+            .play-badge {
+                height: 55px;
+                margin: 0 auto;
+            }
+        }
         @media (max-width: 600px) {
             h1 { font-size: 1.8rem; }
             .logo { max-width: 150px; }
@@ -127,7 +182,19 @@
         <h1>Back to the Village</h1>
         <p class="tagline">Build your dream farm and enjoy a peaceful life!</p>
     </header>
-
+    <div class="download-banner">
+        <div class="download-content">
+            <h2>Available Now!</h2>
+            <p>Start your peaceful farming journey today. Download <strong>Back to the Village</strong> for free on your Android device.</p>
+        </div>
+        <div class="play-store-button">
+            <a href="ССЫЛКА_НА_ИГРУ" target="_blank">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+                     alt="Get it on Google Play" 
+                     class="play-badge">
+            </a>
+        </div>
+    </div>
     <div class="intro">
         <p>Have you ever dreamed of escaping the noisy and polluted metropolis? The hero of <strong>Back to the Village</strong> takes this step and starts a new life among fields, gardens, and cozy buildings.</p>
         <p>Create a farm from scratch that you can truly be proud of: grow crops, care for animals, develop production, and step by step turn a small household into a thriving business. And who knows — maybe this story will inspire your own farm 😉</p>
