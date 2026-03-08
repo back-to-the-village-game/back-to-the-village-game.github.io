@@ -208,7 +208,7 @@
         <p class="tagline" data-i18n="tagline">Build your dream farm and enjoy a peaceful life!</p>
     </header>
     <div class="intro">
-        <p>Have you ever dreamed of escaping the noisy and polluted metropolis? The hero of <strong>Back to the Village</strong> takes this step and starts a new life among fields, gardens, and cozy buildings.</p>
+        <p data-i18n="intro_p1">Have you ever dreamed of escaping the noisy and polluted metropolis? The hero of <strong>Back to the Village</strong> takes this step and starts a new life among fields, gardens, and cozy buildings.</p>
         <p>Create a farm from scratch that you can truly be proud of: grow crops, care for animals, develop production, and step by step turn a small household into a thriving business. And who knows — maybe this story will inspire your own farm 😉</p>
     </div>
     <div class="language-switcher">
@@ -220,27 +220,27 @@
 </div>
     <div class="features-grid">
         <div class="feature-card">
-            <h3>🌱 Gardening</h3>
+            <h3 data-i18n="feature_1_title">🌱 Gardening</h3>
             <p>Plant vegetables, grains, and fruit trees. Harvest a rich crop and unlock new plant species.</p>
         </div>
         <div class="feature-card">
-            <h3>🐄 Animal Husbandry</h3>
+            <h3 data-i18n="feature_2_title">🐄 Animal Husbandry</h3>
             <p>Get cute pets. Don't forget to feed them and collect fresh products.</p>
         </div>
         <div class="feature-card">
-            <h3>⚒️ Master of Crafting</h3>
+            <h3 data-i18n="feature_3_title">⚒️ Master of Crafting</h3>
             <p>Build and develop production buildings. Turn raw materials into valuable goods to grow your farm even faster.</p>
         </div>
         <div class="feature-card">
-            <h3>⚖️ Market Relations</h3>
+            <h3 data-i18n="feature_4_title">⚖️ Market Relations</h3>
             <p>Visit the local Market to profitably sell your harvest or buy everything needed for farm improvements.</p>
         </div>
         <div class="feature-card">
-            <h3>🏆 Farmer's Book</h3>
+            <h3 data-i18n="feature_5_title">🏆 Farmer's Book</h3>
             <p>Become a true collector! Grown plants, crafted goods, bought animals, or built structures are added to your personal record book.</p>
         </div>
         <div class="feature-card">
-            <h3>🧘 Stress-Free Game</h3>
+            <h3 data-i18n="feature_6_title">🧘 Stress-Free Game</h3>
             <p>Eternal summer reigns in Back to the Village. No rush: your crops won't wilt, and animals won't die. Play for your pleasure at any time.</p>
         </div>
     </div>
@@ -267,17 +267,35 @@
     const translations = {
     en: {
         tagline: "Build your dream farm and enjoy a peaceful life!",
-        intro_p1: "Have you ever dreamed of escaping...",
+        intro_p1: "Have you ever dreamed of escaping the noisy and polluted metropolis? The hero of <strong>Back to the Village</strong> takes this step and starts a new life among fields, gardens, and cozy buildings.",
         feature_1_title: "🌱 Gardening",
         download_btn: "Available Now!"
     },
     ru: {
-        tagline: "Построй ферму мечты и наслаждайся мирной жизнью!",
-        intro_p1: "Вы когда-нибудь мечтали сбежать из шумного мегаполиса?",
+        tagline: "Построй ферму мечты и наслаждайся размеренной жизнью!",
+        intro_p1: "Мечтали когда-нибудь сбежать из шумного и загазованного мегаполиса? Герой <strong>Back to the Village</strong> решается на этот шаг и начинает новую жизнь среди полей, садов и уютных построек.
+",
         feature_1_title: "🌱 Садоводство",
         download_btn: "Доступно сейчас!"
     },
-    // Добавь блоки для de, es, sr аналогично
+    sr: {
+        tagline: "Izgradi farmu iz snova i uživaj u mirnom životu!",
+        intro_p1: "Da li ste ikada sanjali o bekstvu iz bučnog i zagađenog velegrada? Junak igre <strong>Back to the Village</strong> se odlučuje na ovaj korak i započinje novi život među poljima, baštama i ušuškanim zgradama.",
+        feature_1_title: "🌱 Baštovanstvo",
+        download_btn: "Доступно сейчас!"
+    },
+    de: {
+        tagline: "Baue deine Traumfarm auf und genieße das beschauliche Leben!",
+        intro_p1: "Hast du jemals davon geträumt, der lautstarken und verschmutzten Metropole zu entfliehen? Der Held von <strong>Back to the Village</strong> wagt diesen Schritt und beginnt ein neues Leben inmitten von Feldern, Gärten und gemütlichen Gebäuden.",
+        feature_1_title: "🌱 Gartenarbeit",
+        download_btn: "Доступно сейчас!"
+    }, 
+    es: {
+        tagline: "¡Construye la granja de tus sueños y disfruta de una vida tranquila!",
+        intro_p1: "¿Alguna vez has soñado con escapar de la ruidosa y contaminada metrópolis? El héroe de <strong>Back to the Village</strong> decide dar este paso y comienza una nueva vida entre campos, huertos y edificios acogedores.",
+        feature_1_title: "🌱 Jardinería",
+        download_btn: "Доступно сейчас!"
+    }
 };
 
 function changeLanguage(lang) {
