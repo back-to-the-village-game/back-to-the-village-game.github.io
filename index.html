@@ -156,6 +156,31 @@
             height: 64px;
             display: block;
         }
+        .language-switcher {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.flag-icon {
+    width: 32px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.flag-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+}
+
+.flag-icon.active {
+    outline: 2px solid var(--primary-green);
+    outline-offset: 3px;
+}
         @media (max-width: 768px) {
             .download-banner {
                 flex-direction: column;
@@ -186,7 +211,13 @@
         <p>Have you ever dreamed of escaping the noisy and polluted metropolis? The hero of <strong>Back to the Village</strong> takes this step and starts a new life among fields, gardens, and cozy buildings.</p>
         <p>Create a farm from scratch that you can truly be proud of: grow crops, care for animals, develop production, and step by step turn a small household into a thriving business. And who knows — maybe this story will inspire your own farm 😉</p>
     </div>
-
+    <div class="language-switcher">
+    <img src="flags/ru.png" alt="RU" onclick="changeLanguage('ru')" class="flag-icon">
+    <img src="flags/en-US.png" alt="EN" onclick="changeLanguage('en')" class="flag-icon">
+    <img src="flags/de.png" alt="DE" onclick="changeLanguage('de')" class="flag-icon">
+    <img src="flags/es.png" alt="ES" onclick="changeLanguage('es')" class="flag-icon">
+    <img src="flags/sr-Latn.png" alt="SR" onclick="changeLanguage('sr')" class="flag-icon">
+</div>
     <div class="features-grid">
         <div class="feature-card">
             <h3>🌱 Gardening</h3>
@@ -232,6 +263,43 @@
         <p><a href="https://back-to-the-village-game.github.io/Privacy-Policy/" class="privacy-link">Privacy Policy</a></p>
     </footer>
 </div>
+<script>
+    const translations = {
+    en: {
+        tagline: "Build your dream farm and enjoy a peaceful life!",
+        intro_p1: "Have you ever dreamed of escaping...",
+        feature_1_title: "🌱 Gardening",
+        download_btn: "Available Now!"
+    },
+    ru: {
+        tagline: "Построй ферму мечты и наслаждайся мирной жизнью!",
+        intro_p1: "Вы когда-нибудь мечтали сбежать из шумного мегаполиса?",
+        feature_1_title: "🌱 Садоводство",
+        download_btn: "Доступно сейчас!"
+    },
+    // Добавь блоки для de, es, sr аналогично
+};
 
+function changeLanguage(lang) {
+    localStorage.setItem('preferredLanguage', lang);
+
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+            element.innerHTML = translations[lang][key];
+        }
+    });
+
+    // 3. Подсвечиваем активный флаг
+    document.querySelectorAll('.flag-icon').forEach(img => {
+        img.classList.toggle('active', img.getAttribute('onclick').includes(lang));
+    });
+}
+
+window.onload = () => {
+    const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+    changeLanguage(savedLang);
+};
+</script>
 </body>
 </html>
