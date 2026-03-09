@@ -436,6 +436,7 @@ video.unrulymedia.com, 475093422, RESELLER
 yango-ads.com, 2420267, DIRECT
 rubiconproject.com, 27714, RESELLER, 0bfd66d529a55807
 orbrx.ai, 8000869124, RESELLER
+facebook.com, 1923359424931059, DIRECT, c3e20eee3f780d68
 media.net, 8CUH46N56, RESELLER
 programmaticx.ai, 84448, RESELLER, b42d42eb28400efa
 targetbetter.com, 82228, RESELLER
