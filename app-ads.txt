@@ -172,7 +172,6 @@ bigo.sg, 29549935, RESELLER
 bigo.sg, 880, DIRECT
 brightcom.com, 29559, RESELLER
 buzzoola.com, 17427, RESELLER
-buzzoola.com/ru/, 29549935, DIRECT
 byyd.me, 29549935, DIRECT
 chocolateplatform.com, 14630, RESELLER
 contextweb.com, 562499, RESELLER
