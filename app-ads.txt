@@ -146,7 +146,6 @@ admixer.com, 29549935, RESELLER
 admixer.net, 2878f07c-cc3f-4f8a-a26c-8e6033a539a6, RESELLER
 adriver.ru, 1009202, DIRECT
 ads.sber.ru, 29549935, DIRECT
-ads.vk.com, 29549935, DIRECT
 adview.com, 53849096, RESELLER
 adwmg.com, 29549935, RESELLER
 algorix.co, 60322, RESELLER
@@ -287,7 +286,6 @@ smartyads.com, 100034, RESELLER
 soloway.ru, 29549935, DIRECT
 sovrn.com, 273644, RESELLER
 ssp.al-adtech.com, 29549935, DIRECT
-target.vk.ru, 29549935, DIRECT
 taurusx.com, 80638, DIRECT
 triplelift.com, 10522, RESELLER
 triplelift.com, 8446, RESELLER
@@ -302,7 +300,6 @@ video.unrulymedia.com, 475093422, RESELLER
 video.unrulymedia.com, 906352066, RESELLER
 vidoomy.com, 9148331, RESELLER
 visiblemeasures.com, 1004, RESELLER
-vk_eu.rtb.rtblab.net, 29549935, DIRECT
 webeyemob.com, 80638, DIRECT
 xapads.com, 144307, RESELLER
 yabbi.me, 675d9254-4032-47ed-9074-b6ef4dbab522, DIRECT
