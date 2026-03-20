@@ -214,18 +214,47 @@
             .logo { max-width: 150px; }
         }
     </style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Back to the Village",
+  "operatingSystem": "Android",
+  "applicationCategory": "GameApplication",
+  "genre": "Farming Simulator",
+  "description": "Back to the Village - Create a farm from scratch - Gardening - Animal Husbandry - Crafting - Stress-Free Game",
+  "image": "https://back-to-the-village-game.github.io/BackToTheVillage.png",
+  "url": "https://back-to-the-village-game.github.io",
+  "author": {
+    "@type": "Person",
+    "name": "Maryko Games"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "installUrl": "https://play.google.com/store/apps/details?id=com.indiedev.backtothevillage"
+}
+</script>
 </head>
 <body>
 
 <div class="container" itemscope itemtype="https://schema.org/MobileApplication">
-	<link itemprop="url" href="https://play.google.com/store/apps/details?id=com.indiedev.backtothevillage">
+    <link itemprop="url" href="https://back-to-the-village-game.github.io">
+    <link itemprop="installUrl" href="https://play.google.com/store/apps/details?id=com.indiedev.backtothevillage">
     <header>
-        <img src="BackToTheVillage.png" alt="Back to the Village Logo" class="logo">
-		<link itemprop="image" href="favicon.png">
+        <img src="BackToTheVillage.png" alt="Back to the Village Logo" class="logo" itemprop="image">
         <h1 itemprop="name">Back to the Village</h1>
-		<p itemprop="description" class="tagline" data-i18n="tagline">Build your dream farm and enjoy a peaceful life!</p>
-		<meta itemprop="operatingSystem" content="Android">
-		<meta itemprop="applicationCategory" content="Game">
+        <p itemprop="description" class="tagline" data-i18n="tagline">Build your dream farm and enjoy a peaceful life!</p>
+        
+        <meta itemprop="operatingSystem" content="Android">
+        <meta itemprop="applicationCategory" content="Game">
+        
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="price" content="0">
+            <meta itemprop="priceCurrency" content="USD">
+        </div>
     </header>
     <div class="language-switcher">
         <img src="flags/en-US.png" alt="EN" onclick="changeLanguage('en')" class="flag-icon">
