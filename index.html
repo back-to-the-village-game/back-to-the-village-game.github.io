@@ -194,6 +194,70 @@
     outline: 2px solid var(--primary-green);
     outline-offset: 3px;
 }
+.faq-container {
+    margin-top: 60px;
+}
+
+.faq-container h2 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--dark-green);
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #e0d8c8;
+}
+
+.faq-question {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.faq-question:hover {
+    background-color: #f9fdf8;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease;
+    padding: 0 20px;
+    background-color: #fff;
+    color: var(--text-color);
+    font-size: 1rem;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 300px;
+    padding-bottom: 20px;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
         @media (max-width: 768px) {
             .download-banner {
                 flex-direction: column;
@@ -235,6 +299,69 @@
     "priceCurrency": "USD"
   },
   "installUrl": "https://play.google.com/store/apps/details?id=com.indiedev.backtothevillage"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "How many levels are there in Back to the Village?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Currently, there are 20 levels in the game. After level 20, the game enters freeplay mode — all features remain available, but no new quests will appear until the next update."
+    }
+  }, {
+    "@type": "Question",
+    "name": "How does the daily reward work?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "The daily reward offers a bonus of coins or vouchers every 24 hours. The bonus increases each day. If you don't claim it within 48 hours of it appearing, the counter resets to Day 1."
+    }
+  }, {
+    "@type": "Question",
+    "name": "I placed a garden bed or a tree hole in the wrong spot. Can I move it?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Garden beds and tree holes cannot be moved, but they can be deleted using the corresponding tool. The coins spent on creation will be refunded to your balance. However, any plant growing in it will also be removed without a refund."
+    }
+  }, {
+    "@type": "Question",
+    "name": "I built a coop, sheepfold, or cowshed, but the animals didn't appear in the shop. Where do I get animals?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Animals are unlocked after completing the specific building quest and clicking 'Claim Reward.' If you built the structure before the quest appeared, it will count as completed once it shows up in your list."
+    }
+  }, {
+    "@type": "Question",
+    "name": "What happens if I don't feed the animals?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Animals will not die. An icon will appear showing they need food, and they will stop producing goods until their feeders are refilled."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Do I need to water the plants?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "No, it is not necessary. It rains periodically in the game, which waters the plants and speeds up their growth by 20%."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Can I speed up the growth of plants or animal production?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Once the growth timer reaches 80% and turns green, you can tap it to open the boost window. It costs 2 vouchers or an ad and 100 coins. If the timer is at 90%, it costs only 1 voucher or an ad."
+    }
+  }, {
+    "@type": "Question",
+    "name": "What happens to my farm if I don't log in for a long time?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Nothing bad will happen. Neither animals nor plants will die. Timers for growth, construction, and production will advance based on real time. Only the daily reward progress will reset to Day 1."
+    }
+  }]
 }
 </script>
 </head>
@@ -292,6 +419,29 @@
             <h3 data-i18n="feature_6_title">🧘 Stress-Free Game</h3>
             <p data-i18n="feature_6_description">Eternal summer reigns in Back to the Village. No rush: your crops won't wilt, and animals won't die. Play for your pleasure at any time.</p>
         </div>
+    </div>
+	<div class="faq-container">
+    <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+    
+    <div class="faq-item">
+        <button class="faq-question">
+            <span>How many levels are there in Back to the Village?</span>
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>Currently, there are 20 levels in the game. After level 20, the game enters freeplay mode — all features remain available, but no new quests will appear until the next update.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            <span>How does the daily reward work?</span>
+            <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+            <p>The daily reward offers a bonus of coins or vouchers every 24 hours. The bonus increases each day. If you don't claim it within 48 hours of it appearing, the counter resets to Day 1.</p>
+        </div>
+    </div>
     </div>
     <div class="download-banner">
         <div class="download-content">
@@ -436,6 +586,23 @@ window.onload = () => {
     const savedLang = localStorage.getItem('preferredLanguage') || 'en';
     changeLanguage(savedLang);
 };
+</script>
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const faqItem = button.parentElement;
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== faqItem) item.classList.remove('active');
+        });
+        faqItem.classList.toggle('active');
+        const icon = button.querySelector('.faq-icon');
+        if (faqItem.classList.contains('active')) {
+            icon.textContent = '-';
+        } else {
+            icon.textContent = '+';
+        }
+    });
+});
 </script>
 </body>
 </html>
