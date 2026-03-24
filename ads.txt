@@ -1,3 +1,4 @@
+OWNERDOMAIN=https://back-to-the-village-game.github.io/
 ironsrc.com, 649403, DIRECT
 33across.com, 0015a00003DKg9ZAAT, DIRECT
 adagio.io, 1522, RESELLER
