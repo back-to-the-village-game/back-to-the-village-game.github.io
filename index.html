@@ -169,11 +169,16 @@
             height: 64px;
             display: block;
         }
-        .language-switcher {
-    display: flex;
+.language-switcher {
+    /*display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px 0;
+    padding: 20px 0;*/
+	display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
 }
 
 .flag-icon {
