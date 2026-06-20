@@ -480,3 +480,6 @@ onlinemediasolutions.com, 23120, RESELLER, b3868b187e4b6402
 brightcom.com, 23120, RESELLER
 e-planning.net, 6a7f877127485fdb, RESELLER, c1ba615865ed87b2
 video.unrulymedia.com, 905340553, RESELLER
+openx.com, 563905670, RESELLER, 6a698e2ec38604c6
+triplelift.com, 14798, RESELLER, 6c33edb13117fd86
+pubmatic.com, 165854, RESELLER, 5d62403b186f2ace
