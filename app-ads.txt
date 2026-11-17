@@ -1,4 +1,5 @@
 OWNERDOMAIN=https://back-to-the-village-game.github.io
+google.com, pub-2064448858433937, DIRECT, f08c47fec0942fa0
 ironsrc.com, 649403, DIRECT
 sharethrough.com, 3713, RESELLER, d53b998a7bd4ecd2
 sharethrough.com, bxzzb1br, RESELLER, d53b998a7bd4ecd2
@@ -560,4 +561,3 @@ smaato.com, 1100059345, RESELLER, 07bcf65f187117b4
 start.io, 131192070, RESELLER
 monetrix.ai, 10761, RESELLER
 playdigo.com, 1965, RESELLER
-google.com, pub-2064448858433937, DIRECT, f08c47fec0942fa0
